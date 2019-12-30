@@ -1,8 +1,8 @@
 .App {
   text-align: center;
   .App-logo {
-    -webkit-animation: App-logo-spin infinite 20s linear;
-    animation: App-logo-spin infinite 20s linear;
+    -webkit-animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-spin infinite 10s linear;
     height: 40vmin;
     pointer-events: none;
   }
@@ -33,23 +33,31 @@
 }
 
 @-webkit-keyframes App-logo-spin {
-  from {
+  0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  to {
+  50% {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes App-logo-spin {
-  from {
+  0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  to {
+  50% {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
